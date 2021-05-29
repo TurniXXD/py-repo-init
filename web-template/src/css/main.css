@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/*! GLOBALS !*/
+
+* {
+	color: white;
+	margin: 0;
+	padding: 0;
+	font-family: 'Montserrat', sans-serif !important;
+}
+
+:root {
+	--violet: #4508bd;
+	--violet-light: #5c09ff;
+	--violet-dark: #310686;
+	--violet-darker: #1b0050;
+	--light-gray: #e7e7e7;
+	--text-dark: #15052f;
+	--text-light: #fff;
+	--text-gray: #969696;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+
+a:hover,
+a:visited,
+a:active {
+	text-decoration: inherit;
+	color: inherit;
+}
+
+/* nadpisy */
+h1 {
+	font-size: 28px; /* 18-28px */
+}
+
+/* podnadpisy */
+h2 {
+	font-size: 18px; /* 14-18px */
+}
+
+li {
+	list-style: none;
+}
+
+/*! GLOBALS END !*/
+
+/*! PRELOADER !*/
+
+#preloader {
+	background: var(--violet);
+	position: fixed;
+	margin: auto;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	box-sizing: border-box;
+	text-align: center;
+	z-index: 1000000;
+}
+
+.loading {
+	overflow-y: hidden;
+	height: 100%;
+}
+
+/*! PRELAODER  END!*/
+
+/** FORMS */
+
+/** FORMS END */
+
+/** RESPO */
+
+/* 9.1 XS (<576px) */
+@media only screen and (max-width: 576px) {
+}
+
+/* 9.2 SM (>=576px) */
+@media only screen and (min-width: 576px) {
+}
+
+/* 9.3 MD (>=768px) */
+@media only screen and (min-width: 768px) {
+}
+
+/* 9.4 LG (>=992px) */
+@media only screen and (min-width: 992px) {
+}
+
+/* 9.5 EL (>=1200px) */
+@media only screen and (min-width: 1140px) {
+}

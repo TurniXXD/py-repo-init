@@ -1,4 +1,4 @@
-# py-web-project-init
+# py-repo-init
 Python script that initalizes a new github repository based on your init requirements and then makes html, css, js basic template
 
 For this script to work you need to have installed git and python 3
@@ -10,6 +10,8 @@ For this script to work you need to have installed git and python 3
 - give execution permission for your user on this file
     $ chmod +x init.py
 - make this file executable or add alias with path to your script into your bashrc
+- add path into init.py, where your new created repos will be saved
+
 
 # Main inspiration 
 https://www.youtube.com/watch?v=b3ySWJinSh4&ab_channel=CuriousCoding

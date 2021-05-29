@@ -47,11 +47,12 @@ try:
     os.system("git remote add origin https://github.com/user/" + repo_name + ".git")
     os.system("echo '# " + repo_name + "' >> README.md")
     os.system("echo 'run git push after everything is done: git push -u origin master' >> README.md")
-    os.system("git add . && git commit -m 'Initial Commit' && git push -u origin master")
     if template:
-        #specify path of your templates and then copy it to your repo folder
-        os.system("cp -r ./path/to/template/* ./path/to/repo" + repo_name)
+        os.system("cp -r " + os.path.dirname(os.path.abspath(__file__)) + "/web-template/. " + REPO_PATH + repo_name)
+        print('web template was added to your repo')
     
+    os.system("git add . && git commit -m 'Initial Commit' && git push -u origin master")
+    print(repo_name + ' was created in ' + REPO_PATH)
 except FileExistsError as err:
     raise SystemExit(err)
 
