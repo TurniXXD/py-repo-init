@@ -1,12 +1,12 @@
 // CSS
 import 'normalize.css';
 import 'bulma/css/bulma.min.css';
-import './../css/main.css';
+import '@css/main.css';
 import 'typicons.font/src/font/typicons.css';
 
 // COMPONENTS
-import '../components/navbar';
-import '../components/footer';
+import '@components/navbar';
+import '@components/footer';
 
 //JS
 const preloader = document.getElementById('preloader')

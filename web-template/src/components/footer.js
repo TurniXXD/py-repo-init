@@ -1,4 +1,4 @@
-import './../css/components/footer.css';
+import '@css/components/footer.css';
 
 class Footer extends HTMLElement {
 	constructor() {
