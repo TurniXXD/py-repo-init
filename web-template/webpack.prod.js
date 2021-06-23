@@ -7,6 +7,15 @@ module.exports = {
 
 	devtool: 'source-map',
 
+	resolve: {
+		alias: {
+			"@": path.resolve(__dirname, './src/'),
+			"@components": path.resolve(__dirname, './src/components/'),
+			"@img": path.resolve(__dirname, './src/img/'),
+			"@css": path.resolve(__dirname, './src/css/'),
+		}
+	},
+
 	entry: {
 		main: '/src/js/main.js',
 		// pages
