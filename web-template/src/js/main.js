@@ -1,4 +1,5 @@
 // CSS
+import 'oxn.css'
 import 'normalize.css';
 import 'bulma/css/bulma.min.css';
 import '@css/main.css';
