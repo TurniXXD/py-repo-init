@@ -1,7 +1,6 @@
 // CSS
-import 'oxn.css'
+import 'oxn-css'
 import 'normalize.css';
-import 'bulma/css/bulma.min.css';
 import '@css/main.css';
 import 'typicons.font/src/font/typicons.css';
 
