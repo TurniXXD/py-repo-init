@@ -8,12 +8,12 @@ import os
 parser = argparse.ArgumentParser()
 parser.add_argument("--name", "-n", type=str, dest="name", required=True)
 parser.add_argument("--private", "-p", dest="is_private", action="store_true")
-parser.add_argument("--template", "-t", dest="template", action="store_true")
+parser.add_argument("--gitignore", "-ig", type=str, dest="git_ignore", required=False)
 args = parser.parse_args()
 #args vars to be passed to payload
 repo_name = args.name 
 is_private = args.is_private
-template = args.template
+git_ignore = args.git_ignore
 
 #link to github api
 API_URL = "https://api.github.com"
@@ -47,9 +47,9 @@ try:
     os.system("git remote add origin https://github.com/user/" + repo_name + ".git")
     os.system("echo '# " + repo_name + "' >> README.md")
     os.system("echo 'run git push after everything is done: git push -u origin master' >> README.md")
-    if template:
-        os.system("cp -r " + os.path.dirname(os.path.abspath(__file__)) + "/web-template/. " + REPO_PATH + repo_name)
-        print('web template was added to your repo')
+    if git_ignore:
+        os.system("cp" + os.path.dirname(os.path.abspath(__file__)) + "/gitignores/ " + git_ignore + ".gitignore" + REPO_PATH + repo_name)
+        print('gitignore was added to your repo')
     
     os.system("git add . && git commit -m 'Initial Commit' && git push -u origin master")
     print(repo_name + ' was created in ' + REPO_PATH)
